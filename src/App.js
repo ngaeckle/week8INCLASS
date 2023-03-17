@@ -21,17 +21,6 @@ function App() {
           <li><Link to='/pokemon'>Pokemon</Link></li>
         </ul>
       </nav>
-      <div>
-        {
-          (!user.loggedIn) ?
-          <button onClick={login}>Login</button> 
-          :
-          <div>
-          <button onClick={logout}>Logout</button>
-          <p>Current User: {user.displayName}</p>
-          </div>
-        }
-      </div>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/contact' element={<Contact />}/>
